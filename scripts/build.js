@@ -25,8 +25,9 @@ async function main() {
     }
 
     const { code } = await build(file, {
-      minify: true,
+      minify: false,
       sourceMap: false,
+      transpileOnly: true
     })
 
     writeFileSync(join(distPath, basename(file).replace('.ts', '.js')), code);
