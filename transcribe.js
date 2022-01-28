@@ -1,1 +1,1 @@
-require('./dist/index.js').transcribe()
+require('./dist/transcribe.js').main()

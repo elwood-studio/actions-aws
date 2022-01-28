@@ -20,7 +20,7 @@ async function main() {
   });
 
   for (const file of files) {
-    if (basename(file) === 'index.ts') {
+    if (basename(file) === 'index.ts' || basename(file) === 'test.ts') {
       continue;
     }
 
